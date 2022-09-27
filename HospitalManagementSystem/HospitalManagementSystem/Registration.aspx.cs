@@ -42,6 +42,7 @@ namespace HospitalManagementSystem
                     }
                 }
                 Response.Write("Registration Successfully.");
+                Response.Redirect("~/Login.aspx");
             }
             catch(Exception ex)
             {

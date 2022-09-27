@@ -10,7 +10,11 @@
     <form id="form1" runat="server">
         
         <center>
-                <b><asp:Label ID="lblMain" runat="server" Text="Update Patient Profile" Font-Size="X-Large"></asp:Label></b>
+                <b>
+                <br />
+                <asp:Label ID="lblMain" runat="server" Text="Update Patient Profile" Font-Size="X-Large"></asp:Label>
+                <br />
+                </b>
                 <br />
                 <br />
                 <asp:Label ID="lblName" runat="server" Text="Name: " EnableViewState></asp:Label>

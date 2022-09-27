@@ -13,5 +13,10 @@ namespace HospitalManagementSystem
         {
 
         }
+
+        protected void btnBack_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("~/DashBoardPatient.aspx");
+        }
     }
 }

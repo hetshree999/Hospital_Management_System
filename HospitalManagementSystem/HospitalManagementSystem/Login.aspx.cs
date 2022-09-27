@@ -55,6 +55,7 @@ namespace HospitalManagementSystem
                     }
                 }
                 Response.Write("Login Successfully.");
+                Response.Redirect("~/DashBoardPatient.aspx");
             }
             catch(Exception ex)
             {

@@ -35,6 +35,11 @@ namespace HospitalManagementSystem
                         tbContact.Text = rdr["Contact"].ToString();
                         tbAddress.Text = rdr["Address"].ToString();
                         tbEmail.Text = rdr["Email"].ToString();
+
+                        if (rdr.Read())
+                        {
+                            Session["Name"] = tbName.Text;
+                        }
                     }
                 }
                 catch (Exception ex)
@@ -64,11 +69,13 @@ namespace HospitalManagementSystem
                     cmd.ExecuteNonQuery();
                 }
                 Response.Write("Data Updated Successfully");
+                Response.Redirect("~/DashBoardPatient.aspx");
             }
             catch (Exception ex)
             {
                 Console.WriteLine("Error: ", ex.Message);
             }
         }
+
     }
 }

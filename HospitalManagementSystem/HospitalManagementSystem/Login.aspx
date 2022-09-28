@@ -45,6 +45,10 @@
                     <br />
                     &nbsp;<asp:HyperLink ID="hlRegister" runat="server" ForeColor="Blue" NavigateUrl="~/Registration.aspx">Create an account ?</asp:HyperLink>
                     <br />
+                    <b>
+                    <asp:HyperLink ID="hlDRegister" runat="server" ForeColor="Blue" NavigateUrl="~/AddDoctor.aspx">Create an account ?</asp:HyperLink>
+                    </b>
+                    <br />
                 </asp:Panel>
                 <br />
                 </b>

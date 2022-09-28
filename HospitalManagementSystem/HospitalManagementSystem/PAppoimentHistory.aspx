@@ -16,21 +16,20 @@
                 <br />
                 </b>
                 <br />
-                <asp:GridView ID="GVAppoiementHistory" runat="server" AutoGenerateColumns="False" DataSourceID="SqlDataSourceAppoimentHistory">
+                <asp:GridView ID="GVAppoiementHistory" runat="server" AutoGenerateColumns="False" DataSourceID="SqlDataSource1">
                 <Columns>
                     <asp:BoundField DataField="PName" HeaderText="PName" SortExpression="PName" />
-                    <asp:BoundField DataField="Department" HeaderText="Department" SortExpression="Department" />
                     <asp:BoundField DataField="Docotor" HeaderText="Docotor" SortExpression="Docotor" />
+                    <asp:BoundField DataField="Department" HeaderText="Department" SortExpression="Department" />
                     <asp:BoundField DataField="AppoimentDate" HeaderText="AppoimentDate" SortExpression="AppoimentDate" />
-                    <asp:BoundField DataField="AppoimnetTime" HeaderText="AppoimnetTime" SortExpression="AppoimnetTime" />
                     <asp:BoundField DataField="Action" HeaderText="Action" SortExpression="Action" />
                 </Columns>
             </asp:GridView>
-            <asp:SqlDataSource ID="SqlDataSourceAppoimentHistory" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT [PName], [Department], [Docotor], [AppoimentDate], [AppoimnetTime], [Action] FROM [Appoiment] WHERE ([Email] = @Email)">
-                <SelectParameters>
-                    <asp:SessionParameter Name="Email" SessionField="Email" Type="String" />
-                </SelectParameters>
-            </asp:SqlDataSource>
+                <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT [PName], [Docotor], [Department], [AppoimentDate], [Action] FROM [Appoiment] WHERE ([Email] = @Email)">
+                    <SelectParameters>
+                        <asp:SessionParameter Name="Email" SessionField="Name" Type="String" />
+                    </SelectParameters>
+                </asp:SqlDataSource>
                 <br />
             <br />
             <asp:Button ID="btnBack" runat="server" Text="Back" OnClick="btnBack_Click" /></center>

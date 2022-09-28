@@ -39,7 +39,7 @@ namespace HospitalManagementSystem
                     cmd.Parameters.AddWithValue("@Department", ddDepartment.SelectedValue);
                     cmd.Parameters.AddWithValue("@Docotor", ddlDoctor.SelectedValue);
                     cmd.Parameters.AddWithValue("@Action", "Pending");
-                    cmd.Parameters.AddWithValue("@Email", Session["Email"]);
+                    cmd.Parameters.AddWithValue("@Email", Session["Name"]);
                     cmd.ExecuteNonQuery();
 
                     Response.Write("Appoiement Booked successfully.");

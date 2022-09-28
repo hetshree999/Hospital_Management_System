@@ -213,6 +213,24 @@ namespace HospitalManagementSystem
         protected global::System.Web.UI.WebControls.DropDownList ddlDoctor;
 
         /// <summary>
+        /// SqlDataSourceDoctorNameP control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSourceDoctorNameP;
+
+        /// <summary>
+        /// SqlDataSourceDoctorSpecialP control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSourceDoctorSpecialP;
+
+        /// <summary>
         /// btnBook control.
         /// </summary>
         /// <remarks>

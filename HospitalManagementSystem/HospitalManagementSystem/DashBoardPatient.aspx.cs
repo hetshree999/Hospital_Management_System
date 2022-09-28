@@ -11,7 +11,8 @@ namespace HospitalManagementSystem
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            //lblName.Text = Session["Name"].ToString();
+            //lblName = (Label)Session["Name"];
+            Response.Write("Welcome, " + Session["Name"]);
         }
 
         protected void btnLogout_Click(object sender, EventArgs e)

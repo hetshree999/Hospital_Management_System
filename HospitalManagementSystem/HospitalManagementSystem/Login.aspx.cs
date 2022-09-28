@@ -26,12 +26,12 @@ namespace HospitalManagementSystem
             {
                 using (con)
                 {
-                    string query = "SELECT Email,Password FROM PatientInfo WHERE Email='" + tbUserName.Text + "'and Password='" + tbPassword.Text + "'";
-
+                    string query = "SELECT Name,Password FROM PatientInfo WHERE Name='" + tbUserName.Text + "'and Password='" + tbPassword.Text + "'";
+              
                     if (rblLogin.SelectedValue == "Doctor")
                     {
                         //hlRegister.Visible = false;
-                        query = "SELECT Email,Password FROM DoctorInfo WHERE Email='" + tbUserName.Text + "'and Password='" + tbPassword.Text + "'";
+                        query = "SELECT DoctorName,Password FROM DoctorInfo WHERE DoctorName='" + tbUserName.Text + "'and Password='" + tbPassword.Text + "'";
                     }
                     if(rblLogin.SelectedValue == "Patient")
                     {
@@ -45,17 +45,29 @@ namespace HospitalManagementSystem
                         //cmd.Parameters.AddWithValue("@Email", tbUserName.Text);
                         //string @Password = tbPassword.Text;
                         SqlDataReader rdr = cmd.ExecuteReader();
-
-                        if(rdr.Read()){
-                            Session["Email"] = tbUserName.Text;
-                            Response.Redirect("~/DashBoardPatient.aspx");
+                        
+                        if (rdr.Read()){
+                            
+                            if (rblLogin.SelectedValue == "Patient")
+                            {
+                                Session["Name"] = tbUserName.Text;
+                                Response.Write("Login Successfully.");
+                                Response.Redirect("~/DashBoardPatient.aspx");
+                            }
+                            if (rblLogin.SelectedValue == "Doctor")
+                            {
+                                Session["DName"] = tbUserName.Text;
+                                Response.Write("Login Successfully.");
+                                Response.Redirect("~/DashBoardDoctor.aspx");
+                            }
+                            
                         }
-
                         rdr.Close();
                     }
+                    
                 }
-                Response.Write("Login Successfully.");
-                Response.Redirect("~/DashBoardPatient.aspx");
+
+                
             }
             catch(Exception ex)
             {
@@ -69,11 +81,13 @@ namespace HospitalManagementSystem
             {
                 PanelLogin.Visible = true;
                 hlRegister.Visible = false;
+                hlDRegister.Visible = true;
             }
             if (rblLogin.SelectedValue == "Patient")
             {
                 PanelLogin.Visible = true;
                 hlRegister.Visible = true;
+                hlDRegister.Visible = false;
             }
         }
 

@@ -67,11 +67,16 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="AddDoctor.aspx" />
     <Content Include="App_Data\HMS.mdf" />
     <Content Include="App_Data\HMS_log.ldf">
       <DependentUpon>HMS.mdf</DependentUpon>
     </Content>
+    <Content Include="DashBoardAdmin.aspx" />
+    <Content Include="DashBoardDoctor.aspx" />
     <Content Include="DashBoardPatient.aspx" />
+    <Content Include="DPatientHistory.aspx" />
+    <Content Include="DUpdateProfile.aspx" />
     <Content Include="Login.aspx" />
     <Content Include="PAppoimentHistory.aspx" />
     <Content Include="PBookAppoiment.aspx" />
@@ -80,12 +85,47 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddDoctor.aspx.cs">
+      <DependentUpon>AddDoctor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddDoctor.aspx.designer.cs">
+      <DependentUpon>AddDoctor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DashBoardAdmin.aspx.cs">
+      <DependentUpon>DashBoardAdmin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DashBoardAdmin.aspx.designer.cs">
+      <DependentUpon>DashBoardAdmin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DashBoardDoctor.aspx.cs">
+      <DependentUpon>DashBoardDoctor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DashBoardDoctor.aspx.designer.cs">
+      <DependentUpon>DashBoardDoctor.aspx</DependentUpon>
+    </Compile>
     <Compile Include="DashBoardPatient.aspx.cs">
       <DependentUpon>DashBoardPatient.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="DashBoardPatient.aspx.designer.cs">
       <DependentUpon>DashBoardPatient.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DPatientHistory.aspx.cs">
+      <DependentUpon>DPatientHistory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DPatientHistory.aspx.designer.cs">
+      <DependentUpon>DPatientHistory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DUpdateProfile.aspx.cs">
+      <DependentUpon>DUpdateProfile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DUpdateProfile.aspx.designer.cs">
+      <DependentUpon>DUpdateProfile.aspx</DependentUpon>
     </Compile>
     <Compile Include="Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>

@@ -39,7 +39,16 @@ namespace HospitalManagementSystem
                         cmd.Parameters.AddWithValue("@ConPassword", tbConPassword.Text);
                         con.Open();
                         cmd.ExecuteNonQuery();
+                        
+                        /*SqlDataReader rdr = cmd.ExecuteReader();
+
+                        if (rdr.Read())
+                        {
+                            Session["Name"] = tbName.Text;
+                        }*/
                     }
+
+                    
                 }
                 Response.Write("Registration Successfully.");
                 Response.Redirect("~/Login.aspx");

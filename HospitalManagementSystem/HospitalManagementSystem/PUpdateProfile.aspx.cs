@@ -22,7 +22,7 @@ namespace HospitalManagementSystem
                 {
                     using (con)
                     {
-                        string query = "Select * from PatientInfo where Email ='" + Session["Email"] + "'";
+                        string query = "Select * from PatientInfo where Name ='" + Session["Name"] + "'";
                         SqlCommand cmd = new SqlCommand(query, con);
                         con.Open();
                         SqlDataReader rdr = cmd.ExecuteReader();
@@ -36,10 +36,7 @@ namespace HospitalManagementSystem
                         tbAddress.Text = rdr["Address"].ToString();
                         tbEmail.Text = rdr["Email"].ToString();
 
-                        if (rdr.Read())
-                        {
-                            Session["Name"] = tbName.Text;
-                        }
+                        
                     }
                 }
                 catch (Exception ex)

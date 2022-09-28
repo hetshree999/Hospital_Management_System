@@ -58,17 +58,19 @@
             <br />
         <asp:Label ID="lblDepartment" runat="server" Text="Select Department: "></asp:Label>
         &nbsp;
-        <asp:DropDownList ID="ddDepartment" runat="server">
+        <asp:DropDownList ID="ddDepartment" runat="server" DataSourceID="SqlDataSourceDoctorSpecialP" DataTextField="DoctorSpecialization" DataValueField="DoctorSpecialization">
             <asp:ListItem>Doc1</asp:ListItem>
             <asp:ListItem>Doc2</asp:ListItem>
             <asp:ListItem>Doc3</asp:ListItem>
         </asp:DropDownList>
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <asp:Label ID="lblDoctor" runat="server" Text="Select Doctor: "></asp:Label>
-        <asp:DropDownList ID="ddlDoctor" runat="server">
+        <asp:DropDownList ID="ddlDoctor" runat="server" DataSourceID="SqlDataSourceDoctorNameP" DataTextField="DoctorName" DataValueField="DoctorName">
             <asp:ListItem>Doc1</asp:ListItem>
             <asp:ListItem>Doc2</asp:ListItem>
         </asp:DropDownList>
+            <asp:SqlDataSource ID="SqlDataSourceDoctorNameP" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT [DoctorName] FROM [DoctorInfo]"></asp:SqlDataSource>
+            <asp:SqlDataSource ID="SqlDataSourceDoctorSpecialP" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT DISTINCT [DoctorSpecialization] FROM [DoctorInfo]"></asp:SqlDataSource>
         <br />
         <br />
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;

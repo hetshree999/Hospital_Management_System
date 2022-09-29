@@ -13,7 +13,11 @@ namespace HospitalManagementSystem
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if (!IsPostBack)
+            {
+                lblDoctor.Visible = false;
+                ddlDoctor.Visible = false;
+            }
         }
 
         protected void btnRegistration_Click(object sender, EventArgs e)
@@ -50,6 +54,29 @@ namespace HospitalManagementSystem
             {
                 Console.WriteLine("Error: ", ex.Message);
             }
+        }
+
+        protected void ddDepartment_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            lblDoctor.Visible = true;
+            ddlDoctor.Visible = true;
+
+        }
+
+        protected void ddlDoctor_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void btnok_Click(object sender, EventArgs e)
+        {
+            Session["Department"] = ddDepartment.SelectedValue;
+            Response.Write(Session["Department"]);
+        }
+
+        protected void btnBack_Click(object sender, EventArgs e)
+        {
+            Response.Write("/~DashBoardPatient.aspx");
         }
     }
 }

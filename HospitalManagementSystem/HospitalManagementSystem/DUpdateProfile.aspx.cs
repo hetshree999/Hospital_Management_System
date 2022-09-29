@@ -52,7 +52,7 @@ namespace HospitalManagementSystem
             {
                 using (con)
                 {
-                    string query = "Update DoctorInfo Set DoctorName ='" + tbDName.Text + "', DoctorSpecialization = '" + ddDSpecial.SelectedValue + "', ConculatancyFee= '" + tbDConFee.Text + "', Contact= '" + tbDContact.Text +"', Email= '" + tbDEmail.Text+"' where Email = '"+ Session["DEmail"] +"'";
+                    string query = "Update DoctorInfo Set DoctorName ='" + tbDName.Text + "', DoctorSpecialization = '" + ddDSpecial.SelectedValue + "', ConculatancyFee= '" + tbDConFee.Text + "', Contact= '" + tbDContact.Text +"', Email= '" + tbDEmail.Text+"' where DoctorName = '"+ Session["DName"] +"'";
                     SqlCommand cmd = new SqlCommand(query, con);
                     con.Open();
                     cmd.ExecuteNonQuery();
@@ -65,6 +65,11 @@ namespace HospitalManagementSystem
             {
                 Response.Write("Error: " + ex.Message);
             }
+        }
+
+        protected void btnBack_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("~/DashBoardDoctor.aspx");
         }
     }
 }

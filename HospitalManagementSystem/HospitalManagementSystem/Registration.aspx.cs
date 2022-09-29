@@ -13,7 +13,7 @@ namespace HospitalManagementSystem
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            this.UnobtrusiveValidationMode = System.Web.UI.UnobtrusiveValidationMode.None;
         }
 
         protected void btnRegistration_Click(object sender, EventArgs e)
@@ -39,7 +39,7 @@ namespace HospitalManagementSystem
                         cmd.Parameters.AddWithValue("@ConPassword", tbConPassword.Text);
                         con.Open();
                         cmd.ExecuteNonQuery();
-                        
+
                         /*SqlDataReader rdr = cmd.ExecuteReader();
 
                         if (rdr.Read())
@@ -48,10 +48,9 @@ namespace HospitalManagementSystem
                         }*/
                     }
 
-                    
+                    Response.Write("Registration Successfully.");
+                    Response.Redirect("~/Login.aspx");
                 }
-                Response.Write("Registration Successfully.");
-                Response.Redirect("~/Login.aspx");
             }
             catch(Exception ex)
             {

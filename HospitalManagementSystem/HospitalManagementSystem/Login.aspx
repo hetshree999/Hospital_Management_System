@@ -7,14 +7,17 @@
     <title></title>
 </head>
 <body>
-    <form id="form1" runat="server">
+    <center><form id="form1" runat="server">
         <div>
-            <center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <br />
+            <br />
+            <br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 <b><asp:Label ID="lblQuestion" runat="server" Text="Are you Doctor or Patient?" Font-Size="Larger"></asp:Label></b>
-                <b>
                 <br />
                 <br />
                 <asp:RadioButtonList ID="rblLogin" runat="server" OnSelectedIndexChanged="rblLogin_SelectedIndexChanged">
+                    <asp:ListItem>Admin</asp:ListItem>
                     <asp:ListItem>Doctor</asp:ListItem>
                     <asp:ListItem Selected="True">Patient</asp:ListItem>
                 </asp:RadioButtonList>
@@ -31,6 +34,7 @@
                     </b>
                     <br />
                     <br />
+                    <br />
                     <asp:Label ID="lblUserName" runat="server" Text="UserName:"></asp:Label>
                     &nbsp;<asp:TextBox ID="tbUserName" runat="server"></asp:TextBox>
                     <br />
@@ -45,15 +49,12 @@
                     <br />
                     &nbsp;<asp:HyperLink ID="hlRegister" runat="server" ForeColor="Blue" NavigateUrl="~/Registration.aspx">Create an account ?</asp:HyperLink>
                     <br />
-                    <b>
-                    <asp:HyperLink ID="hlDRegister" runat="server" ForeColor="Blue" NavigateUrl="~/AddDoctor.aspx">Create an account ?</asp:HyperLink>
-                    </b>
-                    <br />
                 </asp:Panel>
                 <br />
                 </b>
-              </center>
+              
         </div>
     </form>
+</center>
 </body>
 </html>

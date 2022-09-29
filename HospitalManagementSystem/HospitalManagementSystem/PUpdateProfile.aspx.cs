@@ -60,7 +60,8 @@ namespace HospitalManagementSystem
             {
                 using (con)
                 {
-                    string query = "Update PatientInfo SET Name='"+tbName.Text+ "', Gender='" + ddGender.SelectedValue + "', Age='" + tbAge.Text + "', Contact='" + tbContact.Text + "', Address='" + tbAddress.Text + "', Email='" + tbEmail.Text + "' where Email= '" +Session["Email"] +"'";
+                    
+                    string query = "Update PatientInfo SET Name='"+tbName.Text+ "', Gender='" + ddGender.SelectedValue + "', Age='" + tbAge.Text + "', Contact='" + tbContact.Text + "', Address='" + tbAddress.Text + "', Email='" + tbEmail.Text + "' where Name= '" +Session["Name"] +"'";
                     SqlCommand cmd = new SqlCommand(query, con);
                     con.Open();
                     cmd.ExecuteNonQuery();
@@ -74,5 +75,9 @@ namespace HospitalManagementSystem
             }
         }
 
+        protected void btnBack_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("~/DashBoardPatient.aspx");
+        }
     }
 }

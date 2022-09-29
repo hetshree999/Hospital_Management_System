@@ -21,11 +21,11 @@
             <asp:HyperLink ID="hlUpdateP" runat="server" ForeColor="Blue" NavigateUrl="~\PUpdateProfile.aspx">Update Profile</asp:HyperLink>
             <br />
             <br />
-            <asp:HyperLink ID="hlBookAppoiment" runat="server" BorderColor="Blue" NavigateUrl="~\PBookAppoiment.aspx" ForeColor="Blue">Book Appoiment</asp:HyperLink>
+            <asp:HyperLink ID="hlBookAppoiment" runat="server" BorderColor="Blue" NavigateUrl="~\PBookAppoiment.aspx" ForeColor="Blue">Book Appointment</asp:HyperLink>
 &nbsp;&nbsp;
             <br />
             <br />
-            <asp:HyperLink ID="hlAppoimentHistory" runat="server" BorderColor="Blue" NavigateUrl="~/PAppoimentHistory.aspx" ForeColor="Blue">Appoiment History</asp:HyperLink>
+            <asp:HyperLink ID="hlAppoimentHistory" runat="server" BorderColor="Blue" NavigateUrl="~/PAppoimentHistory.aspx" ForeColor="Blue">Appointment History</asp:HyperLink>
             <br />
             <br />
             <asp:Button ID="btnLogout" runat="server" OnClick="btnLogout_Click" Text="Logout" />

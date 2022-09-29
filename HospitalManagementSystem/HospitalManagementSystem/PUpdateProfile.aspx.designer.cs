@@ -51,6 +51,15 @@ namespace HospitalManagementSystem
         protected global::System.Web.UI.WebControls.TextBox tbName;
 
         /// <summary>
+        /// RequiredFieldValidatorName control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidatorName;
+
+        /// <summary>
         /// lblGender control.
         /// </summary>
         /// <remarks>
@@ -67,6 +76,15 @@ namespace HospitalManagementSystem
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DropDownList ddGender;
+
+        /// <summary>
+        /// CompareValidatorGender control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CompareValidator CompareValidatorGender;
 
         /// <summary>
         /// lblAge control.
@@ -87,6 +105,15 @@ namespace HospitalManagementSystem
         protected global::System.Web.UI.WebControls.TextBox tbAge;
 
         /// <summary>
+        /// RequiredFieldValidatorAge control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidatorAge;
+
+        /// <summary>
         /// lblContact control.
         /// </summary>
         /// <remarks>
@@ -103,6 +130,24 @@ namespace HospitalManagementSystem
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox tbContact;
+
+        /// <summary>
+        /// RequiredFieldValidatorContact control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidatorContact;
+
+        /// <summary>
+        /// RegularExpressionValidatorContact control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator RegularExpressionValidatorContact;
 
         /// <summary>
         /// lblAddress control.
@@ -123,6 +168,15 @@ namespace HospitalManagementSystem
         protected global::System.Web.UI.WebControls.TextBox tbAddress;
 
         /// <summary>
+        /// RequiredFieldValidatorAddress control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidatorAddress;
+
+        /// <summary>
         /// lblEmail control.
         /// </summary>
         /// <remarks>
@@ -141,6 +195,15 @@ namespace HospitalManagementSystem
         protected global::System.Web.UI.WebControls.TextBox tbEmail;
 
         /// <summary>
+        /// RequiredFieldValidatorEmail control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidatorEmail;
+
+        /// <summary>
         /// btnRegistration control.
         /// </summary>
         /// <remarks>
@@ -148,5 +211,14 @@ namespace HospitalManagementSystem
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button btnRegistration;
+
+        /// <summary>
+        /// btnBack control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnBack;
     }
 }

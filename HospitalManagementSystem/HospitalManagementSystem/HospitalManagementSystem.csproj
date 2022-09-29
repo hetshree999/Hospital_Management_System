@@ -67,7 +67,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="AAppoinmentHistory.aspx" />
     <Content Include="AddDoctor.aspx" />
+    <Content Include="ADisplayDoctors.aspx" />
+    <Content Include="ADisplayPatient.aspx" />
     <Content Include="App_Data\HMS.mdf" />
     <Content Include="App_Data\HMS_log.ldf">
       <DependentUpon>HMS.mdf</DependentUpon>
@@ -82,15 +85,37 @@
     <Content Include="PBookAppoiment.aspx" />
     <Content Include="PUpdateProfile.aspx" />
     <Content Include="Registration.aspx" />
+    <Content Include="try.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AAppoinmentHistory.aspx.cs">
+      <DependentUpon>AAppoinmentHistory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AAppoinmentHistory.aspx.designer.cs">
+      <DependentUpon>AAppoinmentHistory.aspx</DependentUpon>
+    </Compile>
     <Compile Include="AddDoctor.aspx.cs">
       <DependentUpon>AddDoctor.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="AddDoctor.aspx.designer.cs">
       <DependentUpon>AddDoctor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ADisplayDoctors.aspx.cs">
+      <DependentUpon>ADisplayDoctors.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ADisplayDoctors.aspx.designer.cs">
+      <DependentUpon>ADisplayDoctors.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ADisplayPatient.aspx.cs">
+      <DependentUpon>ADisplayPatient.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ADisplayPatient.aspx.designer.cs">
+      <DependentUpon>ADisplayPatient.aspx</DependentUpon>
     </Compile>
     <Compile Include="DashBoardAdmin.aspx.cs">
       <DependentUpon>DashBoardAdmin.aspx</DependentUpon>
@@ -162,6 +187,13 @@
     </Compile>
     <Compile Include="Registration.aspx.designer.cs">
       <DependentUpon>Registration.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="try.aspx.cs">
+      <DependentUpon>try.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="try.aspx.designer.cs">
+      <DependentUpon>try.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

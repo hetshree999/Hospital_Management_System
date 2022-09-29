@@ -21,7 +21,7 @@
             <asp:HyperLink ID="hlUpdateD" runat="server" ForeColor="Blue" NavigateUrl="~\DUpdateProfile.aspx">Update Profile</asp:HyperLink>
             <br />
             <br />
-            <asp:HyperLink ID="hlDPatientHistory" runat="server" BorderColor="Blue" NavigateUrl="~/DPatientHistory.aspx" ForeColor="Blue">Book Appoiment</asp:HyperLink>
+            <asp:HyperLink ID="hlDPatientHistory" runat="server" BorderColor="Blue" NavigateUrl="~/DPatientHistory.aspx" ForeColor="Blue">Patient History</asp:HyperLink>
 &nbsp;&nbsp;
             <br />
             <br />

@@ -37,6 +37,10 @@ namespace HospitalManagementSystem
                     {
                         //hlRegister.Visible = true;
                     }
+                    if (rblLogin.SelectedValue == "Admin")
+                    {
+                        query = "SELECT AdminName,Password FROM Admin WHERE AdminName='" + tbUserName.Text + "'and Password='" + tbPassword.Text + "'";
+                    }
                     SqlCommand cmd = new SqlCommand(query, con);
                     using (cmd)
                     {
@@ -60,7 +64,17 @@ namespace HospitalManagementSystem
                                 Response.Write("Login Successfully.");
                                 Response.Redirect("~/DashBoardDoctor.aspx");
                             }
-                            
+                            if (rblLogin.SelectedValue == "Admin")
+                            {
+                                Session["AName"] = tbUserName.Text;
+                                Response.Write("Login Successfully.");
+                                Response.Redirect("~/DashBoardAdmin.aspx");
+                            }
+
+                        }
+                        else
+                        {
+                            Response.Write("Invalid Username or Password.");
                         }
                         rdr.Close();
                     }
@@ -81,13 +95,16 @@ namespace HospitalManagementSystem
             {
                 PanelLogin.Visible = true;
                 hlRegister.Visible = false;
-                hlDRegister.Visible = true;
             }
             if (rblLogin.SelectedValue == "Patient")
             {
                 PanelLogin.Visible = true;
                 hlRegister.Visible = true;
-                hlDRegister.Visible = false;
+            }
+            if (rblLogin.SelectedValue == "Admin")
+            {
+                PanelLogin.Visible = true;
+                hlRegister.Visible = false;
             }
         }
 

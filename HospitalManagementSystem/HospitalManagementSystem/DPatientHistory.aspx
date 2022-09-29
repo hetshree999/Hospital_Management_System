@@ -11,10 +11,11 @@
         <div>
             <center>
                 <br />
+                <br />
                 <b><asp:Label ID="lblDPatientHistory" runat="server" Text="Patient History" font-size="X-Large"></asp:Label></b>
                 <br />
                 <br />
-                <asp:GridView ID="GVDPatientHistory" runat="server" AutoGenerateColumns="False" DataSourceID="SqlDataSourcePatientHistoryD" AutoGenerateEditButton="True" OnSelectedIndexChanged="GVDPatientHistory_SelectedIndexChanged1">
+                <asp:GridView ID="GVDPatientHistory" runat="server" AutoGenerateColumns="False" DataSourceID="SqlDataSourcePatientHistoryD" AutoGenerateEditButton="True" OnSelectedIndexChanged="GVDPatientHistory_SelectedIndexChanged">
                     <Columns>
                         <asp:BoundField DataField="PName" HeaderText="PName" SortExpression="PName" />
                         <asp:BoundField DataField="Department" HeaderText="Department" SortExpression="Department" />
@@ -33,8 +34,6 @@
                         <asp:SessionParameter Name="Docotor" SessionField="DName" Type="String" />
                     </SelectParameters>
                 </asp:SqlDataSource>
-                <br />
-                <br />
             <br />
             <asp:Button ID="btnBack" runat="server" Text="Back" OnClick="btnBack_Click" /></center>
             <br />

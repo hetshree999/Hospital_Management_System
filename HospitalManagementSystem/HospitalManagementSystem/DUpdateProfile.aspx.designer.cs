@@ -51,6 +51,15 @@ namespace HospitalManagementSystem
         protected global::System.Web.UI.WebControls.TextBox tbDName;
 
         /// <summary>
+        /// RequiredFieldValidatorDName control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidatorDName;
+
+        /// <summary>
         /// lblDSpecial control.
         /// </summary>
         /// <remarks>
@@ -67,6 +76,15 @@ namespace HospitalManagementSystem
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DropDownList ddDSpecial;
+
+        /// <summary>
+        /// CompareValidatorDSpecialization control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CompareValidator CompareValidatorDSpecialization;
 
         /// <summary>
         /// lblDConFee control.
@@ -87,6 +105,15 @@ namespace HospitalManagementSystem
         protected global::System.Web.UI.WebControls.TextBox tbDConFee;
 
         /// <summary>
+        /// RequiredFieldValidatorDConFee control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidatorDConFee;
+
+        /// <summary>
         /// lblDContact control.
         /// </summary>
         /// <remarks>
@@ -103,6 +130,24 @@ namespace HospitalManagementSystem
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox tbDContact;
+
+        /// <summary>
+        /// RequiredFieldValidatorDContact control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidatorDContact;
+
+        /// <summary>
+        /// RegularExpressionValidatorDContact control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator RegularExpressionValidatorDContact;
 
         /// <summary>
         /// lblDEmail control.
@@ -123,6 +168,15 @@ namespace HospitalManagementSystem
         protected global::System.Web.UI.WebControls.TextBox tbDEmail;
 
         /// <summary>
+        /// RequiredFieldValidatorDEmail control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidatorDEmail;
+
+        /// <summary>
         /// btnUpdate control.
         /// </summary>
         /// <remarks>
@@ -130,5 +184,14 @@ namespace HospitalManagementSystem
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button btnUpdate;
+
+        /// <summary>
+        /// btnBack control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnBack;
     }
 }

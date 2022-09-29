@@ -11,8 +11,8 @@
         <div>
             <center>
                 <br />
-                <b><asp:Label ID="lblAppoimentHistory" runat="server" Text="Appoiment History" font-size="X-Large"></asp:Label>
                 <br />
+                <b><asp:Label ID="lblAppoimentHistory" runat="server" Text="Appointment History" font-size="X-Large"></asp:Label>
                 <br />
                 </b>
                 <br />
@@ -30,7 +30,6 @@
                         <asp:SessionParameter Name="Email" SessionField="Name" Type="String" />
                     </SelectParameters>
                 </asp:SqlDataSource>
-                <br />
             <br />
             <asp:Button ID="btnBack" runat="server" Text="Back" OnClick="btnBack_Click" /></center>
             <br />

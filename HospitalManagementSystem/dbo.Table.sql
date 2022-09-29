@@ -1,4 +1,4 @@
-﻿CREATE TABLE [dbo].Patient
+﻿CREATE TABLE [dbo].PatientInfo
 (
 	[Id] INT NOT NULL PRIMARY KEY IDENTITY, 
     [PName] NVARCHAR(50) NOT NULL, 
